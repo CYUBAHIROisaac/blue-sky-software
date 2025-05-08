@@ -3,19 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <header>
-        <div class="content">
+        <div class="about-container">
+            <h1 style="text-align: center;">Welcome to Blue Sky Software</h1>
+            <logo src="asset/logo.png" alt="Blue Sky Software" width="200" height="100">
             <nav>
-                <a href="about.html">about</a>
-                <a href="login.html">login</a>
-            <a href="contact.html">contact</a>
-            <a href="skill.html">skill</a>
+                <ul>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="login.html">login</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="skill.html">skill</a>
+                </ul>
             </nav>
         </div>
     </header>
-    
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="authenticate.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div class="footer">
+        
+        <img src="asset/facebook.png" alt="Facebook" width="50" height="50">
+        <img src="asset/instagram.png" alt="Instagram" width="50" height="50">
+        <img src="asset/tel.png" alt="Telephone" width="50" height="50">
+        <img src="asset/gmail.png" alt="Gmail" width="50" height="50">
+        <p>&copy; 2025 Blue Sky Software. All rights reserved.</p>
+    </div>  
 </body>
 </html>
