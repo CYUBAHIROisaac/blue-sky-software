@@ -3,34 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=  , initial-scale=1.0">
-    <title>Document</title>
+    <title>home</title>
     <style>
-        ul li { margin-inline: -77px; margin-left:99px; margin-top: 30px; } ul li a { color: rgb(8, 8, 8); text-decoration: none; padding: 10px 15px; display: block; font-family: Arial, sans-serif; transition: background-color 0.3s; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+             margin: 0;
+      padding-top: 60px;
+        }
+        .about-container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        p {
+            line-height: 1.6;
+            text-align: center;
+        }
+    
+        
+        footer {
+            background-color: white;
+            padding: 20px;
+            margin: 0 10px;
+        }
+      nav  {
+         position: fixed;   
+      top: 0;           
+      width: 100%;       
+      background-color:white;      
+      padding: 15px;;
+      z-index: 1000;  
+        padding: 10px 20px;
+             display: flex; 
+             left: 900px; 
+             color: black;
+             border-radius: 5px;
+             }
 
+ul li a{color: #000;
+}
     </style>
     
 </head>
-<body>
-    <header style="background-color: aliceblue; padding: 10%;">
-        <div class="about-container" style="background-color: aliceblue;color: black;">
-           <logo> <img src="c:\Users\user\Desktop\blue sky software\blue-sky-software\asset\log.jpg" alt="Blue Sky Software" width="100" height="100"></logo>
+<body style="display: rights 20px;display: left 20px;">
+    <header style="background-color:white; ">
+        <div  class="about-container" style="color: black; background-color: white;display: flex;"></div>
+           <logo> 
+            <img src="..\asset\log.jpg"
+             alt="Blue Sky Software" width="100" height="100" style="border-radius: 50%;">
+            </logo>
             
             <h1 style="text-align: center;">Welcome to Blue Sky Software</h1>
             
             <nav >
-                <ul>
-                    <li><a href="home.html" style="color: black;">Home</a></li>
-                    <li> <a href="about.html"  style="color: black;">About</a></li>
-                    <li><a href="login.html" style="color: black;">login</a></li>
-                    <li><a href="contact.html" style="color: black;">Contact</a></li>
-                    <li><a href="skill.html" style="color: black;">skill</a></li>
+                <ul style="list-style: none; padding: 0; display: inline-flex; gap: 15px;">
+                    <li><a href="home.html" >Home</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <li><a href="login.html" >login</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="skill.html" >skill</a></li>
                 </ul>
             </nav>
+
         </div>
     </header>
-    <div class="about-container" style="background-color: aliceblue;">
-        <main>
-            <h2>About Us</h2>
+    <div class="about-container" >
+        <main style="padding: 20px; max-width: 800px; margin: auto;background-color: white;">
+            <h2 style="text-align: center;">About Us</h2>
             <img src="asset/login.png" alt="Blue Sky Software" width="300" height="200">
             <p>Welcome to Blue Sky Software! We are a team of passionate developers and designers dedicated to creating innovative software solutions that meet the needs of our clients.</p>
             <p>We are a software development company dedicated to providing high-quality solutions for our clients. Our team of experienced developers and designers work together to create innovative software that meets the needs of businesses and individuals alike.</p>
@@ -43,12 +85,21 @@
 
         </main>
     </div>
-    <div class="">
+    <div class="" style=" display: flex;gap: 800px;display: inline-flex;">
         <footer class="">
             
-        <a href="https://www.facebook.com/video Software " ><img src="c:\Users\user\Desktop\blue sky software\blue-sky-software\asset\face.png" alt="Face" width="50" height="50"></a>
-        <a href="https://www.instagram.com/ video software" target="_blank"><img src="c:\Users\user\Desktop\blue sky software\blue-sky-software\asset\instagram.jpg" alt="Instagram" width="50" height="50"></a>
-        <a href="https://www.gmail.com/Software" target="_blank"><img src="c:\Users\user\Desktop\blue sky software\blue-sky-software\asset\gmail.jpg" alt="gmail" width="50" height="50"></a>
+          <a href="https://www.facebook.com/video Software " >
+            <img src="../asset/face.png"
+             alt="Face" width="50" height="50" style="vertical-align: middle;">
+        </a>
+          <a href="https://www.instagram.com/ video software" target="_blank">
+            <img src="../asset/instagram.jpg"
+             alt="Instagram" width="50" height="50"style="vertical-align: middle;">
+        </a>
+          <a href="https://www.gmail.com/cyubahiroisaac64@gmail.com" target="_blank">
+            <img src="../asset/gmail.jpg" 
+            alt="gmail" width="50" height="50"style="vertical-align: middle;">
+        </a>
 
             <p>&copy; 2025 Blue Sky Software. All rights reserved.</p>        
         </footer>
