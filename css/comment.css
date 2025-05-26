@@ -1,11 +1,4 @@
-
-   div logo img{
-        border-radius: 50%;
-      }
-.content h1{
-    text-align: center;
-}
-div h1{
+div header h1{
     text-align: center;
 }
 nav{
@@ -51,8 +44,3 @@ nav{
 .menu li a {
   background-color: white;
 }
-
-
-   footer a .img1{
-    vertical-align: middle;
-   }
