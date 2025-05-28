@@ -1,12 +1,14 @@
-   div logo img{
+ body{
+  background-color: white;
+ }
+ 
+ div logo img{
         border-radius: 50%;
       }
 div h1{
     text-align: center;
     position: relative; top: -100px;
 }
-
-
         a{
             color: black;
         }
@@ -15,15 +17,14 @@ div h1{
             margin-left: 5%;
             margin-right: 5%;
             padding: 0;
-            background-color: white;
-            margin-left: 5%;
-            margin-right: 5%;
+            background-color: rgb(252, 242, 242);
+            margin-left: 5%px;
+            margin-right: 5%px;
             display: flex; 
             flex-direction: column;
         }
 
 nav{
-    
              display: flex; 
              left: 900px; 
              top: 50%;
@@ -33,9 +34,9 @@ nav{
        background-color:white;      
        padding: 15px;;
        z-index: 1000;  
-         padding: 10px 20px;
+         padding: 10px 15px;
               display: flex; 
-              left: 700px; 
+              left: 600px; 
               border-radius: 5px;
 }
    nav ul li a{
@@ -53,19 +54,21 @@ nav{
 .menu li {
   margin: 0;
 }
+.menu li a:hover {
+  color: red;
+}
 
 .menu li a {
   display: block;
-  padding: 15px 20px;
+  padding: 15px 15px;
   color:black;
   text-decoration: none;
 }
-   main .div1{
-     margin-left:200px ;margin-top: -87px;}
-     main .div2{margin-left: 400px;margin-top: -300px;}
-    main .div3{margin-left: 500px;margin-top:-410px ;}
-    main .div4{margin-left: 500px;margin-top :-00px;}
-    main .div5{ margin-left:800px;margin-top:-410px}
+      main .div1{margin-left: 80px;margin-top: -80px;}
+      main .div2{margin-left: 300px;margin-top:-190px;}
+      main .div3{margin-left: 90px;margin-top: 90px; }
+      main .div4{margin-left: 300px;margin-top:-210px;}
+      main .div5{margin-left: 700px;margin-top:210px;}
 
    footer a .img1{
     vertical-align: middle;

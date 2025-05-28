@@ -3,39 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/comment.css">
+    <title>welcome to our blogs pages</title>
+    <link rel="stylesheet" href="../css/blogs.css">
+        
 </head>
 <body>
-<div>
-    <header>
-        <logo> 
-                <img src="../asset/log.jpg" alt="Blue Sky Software" width="100" height="100" >
-            </logo>
-            <h1>Welcome to Blue Sky Software</h1>
-            <nav>
-                <ul class="menu" >
-                    <li><a href="../pages/home.html">Home</a></li>
-                    <li><a href="../pages/about.html">About</a></li>
-                    <li><a href="../pages/blog.html">blog</a></li>
-                    <li><a href="../pages/comment.html">comment</a></li>
-                    <li><a href="../pages/login.html">Login</a></li>
-                    <li><a href="../pages/sinup.html">sinup</a></li>
-                    <li><a href="../pages/contact.html">Contact</a></li> 
-                    <li><a href="../pages/skill.html">Skill</a></li>
-                </ul>
-            </nav>
-    </header>
-</div>
-    
-  
-  <div class="comment-box">
-    <h2>Leave a Comment</h2>
-    <div class="comm"></div>
-    <form id="commentForm">
-      <input type="text" id="name" placeholder="Your name" required>
-      <textarea id="comment" placeholder="Your comment..." required></textarea>
-    <div class="post">
+    <!-- <div class="content"> -->
+        <!-- <logo>  -->
+            <!-- <img src="../assets/log.jpg" alt="Blue Sky Software" width="100" height="100"> -->
+        <!-- </logo> -->
+        <!-- <h1>Welcome our blogs page</h1> -->
+        <nav>
+            <ul class="menu">
+                <li><a href="../pages/home.html">Home</a></li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="../pages/blog.html">Blog</a></li>
+                <li><a href="../pages/login.html">Login</a></li>     
+                <li><a href="../pages/sinup.html">Signup</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li> 
+                <li><a href="../pages/skill.html">Skill</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div>
+
+            <div class="comment box">
+            <h2>leave a comment</h2> 
+             <div class="comm"></div>  
+             <form id="comment form">
+             <input type="text" id="name" placeholder="your name" required>
+             <textarea id="comment" placeholder="your comment ..." required></textarea>
+<div class="post">
       <button type="submit" >Post Comment</button>
 
     </div>  
@@ -120,7 +118,51 @@ window.addEventListener('DOMContentLoaded', () => {
  <div class="ft"></div>
     <center>
     <div>
-        <footer class="">
+        =""><footer class="footer">
+        <center>
+            <div class="container">
+                <img src="../assets/blog.jpg" alt="Blog Image" width="100" height="100">
+                <p>Welcome to our blog page where you can create and share your blogs.</p>
+                </center>
+            </div>
+    <h1> create blogs</h1>
+    <form id="blogsForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="content">Content:</label><br>
+        <textarea id="content" name="content" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Create Blogs</button>
+    </form>
+    <div id="blogsList">
+        <h2>Blogs</h2>
+        <ul id="blogs"></ul>
+    </div>
+    <script>
+        document.getElementById('blogsForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const title = document.getElementById('title').value.trim();
+            const content = document.getElementById('content').value.trim();
+
+            if (title && content) {
+                const blogsList = document.getElementById('blogs');
+                const blogItem = document.createElement('li');
+                blogItem.innerHTML = `<strong>${title}</strong>: ${content}`;
+                blogsList.appendChild(blogsItem);
+
+                // Clear the form
+                document.getElementById('blogsForm').reset();
+            } else {
+                alert('Please fill in both fields.');
+            }
+        });
+    </script>
+    <div class="ft"></div>
+    <center>
+    <div>
+        =""><footer class
             
           <a href="https://www.facebook.com/video Software " target="_blank" rel="noopener" >
             <img src="../asset/facebook.jpg"
@@ -139,5 +181,9 @@ window.addEventListener('DOMContentLoaded', () => {
         </footer>
     </div>
 </center>
+</body>
+</html>
+    
+
 </body>
 </html>

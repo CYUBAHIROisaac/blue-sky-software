@@ -25,7 +25,7 @@ function validateLogin(event) {
     errorMessage.style.color = "green";
 
     setTimeout(() => {
-      window.location.href = "index.html";
+      window.location.href = "../pages/home.html";
     }, 1500);
 }
 }
