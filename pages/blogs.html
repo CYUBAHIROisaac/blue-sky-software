@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brogs</title>
+    <!-- <link rel="stylesheet" href="/css/blog.css">  -->
+     <link rel="stylesheet" href="../css/blog.css">
+
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+ 
+    <!-- <h1>welcome to blogs page</h1> -->
+
+  </div>
+    <div class="container-1">
+        <header>
+            <!-- <img src="../assets/image/logo.jpg" alt="logo" width="100" height="100"> -->
+             <img src="./assets/image/joseph1.png" alt="logo" width="100" height="100">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                
+                    <li><a href="../page/skills.html">Skills</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="blogs.html">blogs</a></li>
+                    <li><a href="portfolio.html">portifolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                      <li><a href="login.html">login</a></li>
+                      <li><a href="signup.html">signup</a></li>
+                      <li><a href="dashboard.html">dashboard</a></li>
+                </ul>
+            </nav>
+            <div class="corner"></div>
+            <div class="corner-shape"></div>
+        </header>
+    </div>
+    <!-- <button id="showCommentBtn" class="comment-btn">Comment</button> -->
+
+  <div class="comment-section" id="commentSection">
+      <span id="username"></span>!
+    <!-- <div class="textarea-container" id="textareaContainer"> -->
+      <textarea placeholder="Write your comment..." id="textarea"></textarea><br />
+      <div class="btn">
+             <button class="delete-btn" id="delete" onclick="logout()">logout</button>
+               <button type="submit" onclick=" loadBlogs()" id="logoutBtn">Post</button>
+                <h3>Your Blog Posts:</h3>
+  <ol id="blogList"></ol>
+              </div>
+ 
+    <!-- </div> -->
+  <!-- </div> -->
+  <!-- <form id="postForm">
+    <label for="message">Your Message:</label>
+    <input type="text" id="message" name="message" placeholder="Write something..." required>
+    <button type="submit">Post</button>
+  </form>
+     -->
+  <script src="../js/brogs.js"></script>
+   <script src="../js/loader.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+    if (isLoggedIn !== "true") {
+      window.location.href = ".html";
+    }
+  });
+</script>
+
+    
+
+ 
+
+    
+</body>
+</html>

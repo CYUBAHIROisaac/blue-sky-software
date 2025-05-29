@@ -20,8 +20,7 @@ div h1{
             background-color: rgb(252, 242, 242);
             margin-left: 5%px;
             margin-right: 5%px;
-            display: flex; 
-            flex-direction: column;
+            
         }
 
 nav{
@@ -36,7 +35,7 @@ nav{
        z-index: 1000;  
          padding: 10px 15px;
               display: flex; 
-              left: 600px; 
+              left: 700px; 
               border-radius: 5px;
 }
    nav ul li a{
@@ -64,13 +63,54 @@ nav{
   color:black;
   text-decoration: none;
 }
-      main .div1{margin-left: 80px;margin-top: -80px;}
-      main .div2{margin-left: 300px;margin-top:-190px;}
-      main .div3{margin-left: 90px;margin-top: 90px; }
-      main .div4{margin-left: 300px;margin-top:-210px;}
-      main .div5{margin-left: 700px;margin-top:210px;}
+    
 
    footer a .img1{
     vertical-align: middle;
    }
-   footer {display: flex;gap: 800px;display: inline-flex;}
+   
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.team {
+    display: flex;
+    flex-direction: row; /* Kuri column imwe */
+    flex-wrap: wrap; /* Igabanye neza kuri screen nini cyangwa nto */
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    flex-direction: row
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+.card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+   
